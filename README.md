@@ -4,7 +4,12 @@ Analysis code for the manuscript:
 
 > Falah F, Danesh Pajouh MM, Liang SHL, Saeedi S. *Evaluating Wearable Sensing Using Federated Learning for Early Awareness of Depressive Symptoms: A Participant-Level Analysis of 3 Public Data Sets.* Manuscript prepared for JMIR mHealth and uHealth.
 
-Department of Electrical and Software Engineering, Schulich School of Engineering, and UbiSensing AI Research Lab, University of Calgary, Calgary, AB, Canada.
+**Authors:** Faraneh Falah¹, MSc; Mohammad Mahdi Danesh Pajouh², MSc; Steve H L Liang², PhD; Sara Saeedi¹, PhD
+
+¹Department of Electrical and Software Engineering, Schulich School of Engineering, University of Calgary, Calgary, AB, Canada
+²UbiSensing AI Research Lab, University of Calgary, Calgary, AB, Canada
+
+**Contact:** Faraneh Falah (farane.falah@ucalgary.ca) and Sara Saeedi (ssaeedi@ucalgary.ca), Department of Electrical and Software Engineering, Schulich School of Engineering, University of Calgary, 2500 University Drive NW, Calgary, AB T2N 1N4, Canada
 
 The code applies one standardized, participant-level protocol to 3 public data sets (PSYCHE-D, an HRV and PHQ-9 data set, and RESILIENT):
 
