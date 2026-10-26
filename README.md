@@ -1,8 +1,23 @@
-# Participant-level evaluation of wearable depression models
+# Evaluating Wearable Sensing Using Federated Learning for Early Awareness of Depressive Symptoms: A Participant-Level Analysis of 3 Public Data Sets
 
 Analysis code for the manuscript "Do Consumer Wearable Features Add Value Beyond Questionnaires for Assessing Depressive Symptoms? Participant-Level Secondary Analysis of 3 Public Data Sets" (Falah, Danesh Pajouh, Saeedi, Liang; manuscript prepared for JMIR mHealth and uHealth).
 
 The code applies one standardized participant-level protocol to 3 public data sets (PSYCHE-D, an HRV and PHQ-9 data set, and RESILIENT): leakage audit, model screening, timing-aware input ablation, operating points and calibration, frozen MOMENT-1-small embeddings, and simulated federated learning (FedAvg, FedXgbBagging and TreeAvg) with measured communication.
+Faraneh Falah1, MSc; Mohammad Mahdi Danesh Pajouh12, MSc; Steve H L Liang2, PhD, Sara Saeedi1, PhD; Steve H L Liang1, PhD
+1Department of Electrical and Software Engineering, Schulich School of Engineering, University of Calgary, Calgary, AB, Canada
+Ubisensing AI Reasearch Lab, University of Calgary, Calgary, AB, Canada
+
+Corresponding Author:
+Faraneh Falah, MSc and Sara Saeedi
+Department of Electrical and Software Engineering
+Schulich School of Engineering
+University of Calgary
+2500 University Drive NW
+Calgary, AB, T2N 1N4
+Canada
+
+Email: farane.falah@ucalgary.ca, ssaeedi@ucalgary.ca
+<img width="468" height="235" alt="image" src="https://github.com/user-attachments/assets/43dea23e-e509-47a3-a710-4e294860059f" />
 
 ## Contents
 
