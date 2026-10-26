@@ -1,6 +1,6 @@
 # Participant-level evaluation of wearable depression models
 
-Analysis code for the manuscript "Do Consumer Wearable Features Add Value Beyond Questionnaires for Assessing Depressive Symptoms? Participant-Level Secondary Analysis of 3 Public Data Sets" (Falah, Danesh Pajouh, Saeedi, Liang; submitted to JMIR mHealth and uHealth).
+Analysis code for the manuscript "Do Consumer Wearable Features Add Value Beyond Questionnaires for Assessing Depressive Symptoms? Participant-Level Secondary Analysis of 3 Public Data Sets" (Falah, Danesh Pajouh, Saeedi, Liang; manuscript prepared for JMIR mHealth and uHealth).
 
 The code applies one standardized participant-level protocol to 3 public data sets (PSYCHE-D, an HRV and PHQ-9 data set, and RESILIENT): leakage audit, model screening, timing-aware input ablation, operating points and calibration, frozen MOMENT-1-small embeddings, and simulated federated learning (FedAvg, FedXgbBagging and TreeAvg) with measured communication.
 
