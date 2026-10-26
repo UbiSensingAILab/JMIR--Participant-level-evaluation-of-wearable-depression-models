@@ -70,7 +70,6 @@ p31 = pd.read_csv(OUT / "P3_1_hrv_leakage_participant_ci.csv")
 p32 = pd.read_csv(OUT / "P3_2_hrv_moment_rerun.csv")
 hrv = J(ROOT / "src/data/protocolComparison/hrv_phq9.json")
 res = J(ROOT / "src/data/protocolComparison/resilient.json")
-psy = J(ROOT / "src/data/protocolComparison/psyche_d.json")
 hrv5 = J(SC / "hrv_phq9_protocol_stage05_results.json")["operating_points"]
 res45 = J(SC / "resilient_protocol_stage04_05_results.json")
 FL = {}
@@ -113,22 +112,10 @@ def comm(v, iset, part, m, col):
     return d[(d.input_set == iset) & (d.partition == part) & (d.method == m)][col]
 
 
-# ------------------------------------------------------------------ Task 1: manuscript state
-desk = Path.home() / "Desktop/JMIR_submission/Falah_JMIR_mHealth_manuscriptfinal.docx"
-snap = ROOT / "research_datasets/revision_cache/manuscript_snapshots/03_after_tier1_red_CURRENT.docx"
-t1 = {}
-if desk.exists():
-    xml = zipfile.ZipFile(desk).read("word/document.xml").decode("utf8")
-    dates = pd.Series(re.findall(r'w:date="([^"]+)"', xml)).value_counts().sort_index()
-    t1 = {"file": str(desk), "sha1": hashlib.sha1(desk.read_bytes()).hexdigest(),
-          "identical_to_snapshot_03": snap.exists() and desk.read_bytes() == snap.read_bytes(),
-          "tracked_change_dates": dates.to_dict(), "lock_file_present": (desk.parent / "~$lah_JMIR_mHealth_manuscriptfinal.docx").exists()}
-    (OUT / "T1_manuscript_state.json").write_text(json.dumps(t1, indent=1))
-
 # ------------------------------------------------------------------ Task 8: RESILIENT label shuffle
 s23 = J(SC / "resilient_protocol_stage02_03_results.json")["permutation_test"]
 s45 = res45["permutation_frozen_model"]
-psy_a10 = J(SC / "audit_psyche_d_baseline_results.json")["part_a"]
+psy_a10 = J(SC / "audit_psyche_d_baseline_results_part_a.json")  # written by audit_psyche_d_baseline.py
 hrv_perm = J(SC / "hrv_phq9_protocol_stage02_results.json")["permutation_test"]
 t8 = pd.DataFrame([
     {"dataset": "RESILIENT", "value_cited_as": "0.44", "mean": s23["mean"], "sd": s23["sd"], "per_shuffle": s23["aurocs"],
@@ -400,6 +387,6 @@ lines += [f"- TreeAvg eta 0.10 (prespecified, as specified code): " + "; ".join(
           f"- HRV and PHQ-9 FL (2 clients, PHQ9_1 only) and RESILIENT FL (exploratory): unchanged, TABLE5_federated.md.", "",
           "## Discussion numbers",
           "- No new numbers: the Discussion should quote the Results bullets above (screener vs Fitbit contributions, outcome sensitivity, held-out test selection, calibration, FL gap to centralized under both tree implementations).",
-          "", "## Manuscript state (task 1)", f"- {json.dumps(t1)}"]
+          ]
 (FIN / "FINAL_NUMBERS.md").write_text("\n".join(lines) + "\n")
 print("wrote", *sorted(p.name for p in FIN.iterdir()))

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Figures 1-4 for the v9 manuscript: Times New Roman, one 300-dpi PNG each, in ~/Desktop/JMIR_submission/v9_figures.
+"""Figures 1-4 for the v9 manuscript: Times New Roman, one 300-dpi PNG each, in results/revision/final/manuscript_figures.
 
 Plotting only. Figure 2 and 4 data come from the saved CSVs; Figure 3 from T9_calibration_deciles.csv
 (written by scripts/revision/final_fig3_deciles.py, which asserts the refit reproduces T9_calibration.csv)."""
@@ -15,8 +15,8 @@ from PIL import Image  # noqa: E402
 
 plt.rcParams["font.family"] = "Times New Roman"
 plt.rcParams["mathtext.fontset"] = "stix"
-OUTD = Path.home() / "Desktop/JMIR_submission/v9_figures"
 REV = Path(__file__).resolve().parents[3] / "results" / "revision"
+OUTD = REV / "final" / "manuscript_figures"
 OUTD.mkdir(exist_ok=True)
 
 

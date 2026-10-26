@@ -1,18 +1,18 @@
 cff-version: 1.2.0
 message: "If you use this code, please cite it as below."
-title: "Participant-level evaluation of wearable depression models: analysis code"
+title: "Evaluating wearable sensing using federated learning for early awareness of depressive symptoms: analysis code"
 authors:
   - family-names: Falah
     given-names: Faraneh
     affiliation: "Department of Electrical and Software Engineering, Schulich School of Engineering, University of Calgary"
   - family-names: Danesh Pajouh
     given-names: Mohammad Mahdi
-    affiliation: "Department of Electrical and Software Engineering, Schulich School of Engineering, University of Calgary"
-  - family-names: Saeedi
-    given-names: Sara
-    affiliation: "Department of Electrical and Software Engineering, Schulich School of Engineering, University of Calgary"
+    affiliation: "UbiSensing AI Research Lab, University of Calgary"
   - family-names: Liang
     given-names: Steve H L
+    affiliation: "UbiSensing AI Research Lab, University of Calgary"
+  - family-names: Saeedi
+    given-names: Sara
     affiliation: "Department of Electrical and Software Engineering, Schulich School of Engineering, University of Calgary"
 license: MIT
 version: "1.0.0"
