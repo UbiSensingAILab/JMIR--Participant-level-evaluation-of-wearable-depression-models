@@ -17,7 +17,6 @@ Calgary, AB, T2N 1N4
 Canada
 
 Email: farane.falah@ucalgary.ca, ssaeedi@ucalgary.ca
-<img width="468" height="235" alt="image" src="https://github.com/user-attachments/assets/43dea23e-e509-47a3-a710-4e294860059f" />
 
 ## Contents
 
