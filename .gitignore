@@ -1,0 +1,10 @@
+research_datasets/
+results/
+scripts/.cache/
+*.pkl
+*.npz
+*.parquet
+__pycache__/
+.venv*/
+.DS_Store
+~$*
