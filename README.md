@@ -39,10 +39,6 @@ Run each step in its own process with `OMP_NUM_THREADS=1` (torch and LightGBM/XG
 1. The per-data-set protocol stages (`hrv_phq9_protocol_stage*`, `resilient_protocol_stage*`) in numeric order, and `psyche_d_fedavg_vs_fedtree_step1_centralized.py` (builds the PSYCHE-D federated split).
 2. `python3 scripts/revision/run_all_revision.py --moment` for the final analyses (about 50 minutes on an Apple silicon laptop).
 
-## Generative AI use
-
-The code was written and run with Claude Code (Anthropic) under the authors' direction; the authors checked the outputs. The full author prompts and transcripts will be added to `ai_use/` in a later release.
-
 ## License
 
 MIT (see `LICENSE`). The data sets keep their own licenses.

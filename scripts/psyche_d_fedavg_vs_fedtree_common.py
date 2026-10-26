@@ -58,9 +58,8 @@ PARTITION_SEEDS = [1, 2, 3]  # "several seeds" per task Step 3 -- one K, three p
 N_BOOTSTRAP = 2000
 
 ARM_B_CENTRALIZED_LGBM_DART_REFERENCE = {
-    # Cited, frozen, StratifiedGroupKFold(5) pooled-OOF reference (NOT this
-    # session's split) -- see .claude/memory/CLAUDE_psyche_d_severity_change.md
-    # and scripts/simulate_psyche_d_fl_soft_voting_arm_b.py:ARM_B_CENTRALIZED_REFERENCE.
+    # Cited, frozen, StratifiedGroupKFold(5) pooled-OOF reference of the protocol model
+    # (not the federated train/validation/test split used here).
     "auroc": 0.7090, "auroc_ci": [0.6971, 0.7208], "auprc": 0.3830,
     "accuracy": 0.6499, "balanced_accuracy": 0.6471,
     "sensitivity": 0.6421, "specificity": 0.6520,
