@@ -6,7 +6,7 @@ Analysis code for the manuscript:
 
 **Authors:** Faraneh Falah¹, MSc; Mohammad Mahdi Danesh Pajouh², MSc; Steve H L Liang², PhD; Sara Saeedi¹, PhD
 
-¹Department of Electrical and Software Engineering, Schulich School of Engineering, University of Calgary, Calgary, AB, Canada
+¹Department of Electrical and Software Engineering, Schulich School of Engineering, University of Calgary, Calgary, AB, Canada  
 ²UbiSensing AI Research Lab, University of Calgary, Calgary, AB, Canada
 
 **Contact:** Faraneh Falah (farane.falah@ucalgary.ca) and Sara Saeedi (ssaeedi@ucalgary.ca), Department of Electrical and Software Engineering, Schulich School of Engineering, University of Calgary, 2500 University Drive NW, Calgary, AB T2N 1N4, Canada
